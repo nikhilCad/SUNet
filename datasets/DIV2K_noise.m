@@ -7,7 +7,6 @@ pkg load image
 file_path = '/content/CAVE/train/';% 影象資料夾路徑 最後記得加\
 % D:\NCHU\Dataset\Denoise\DIV2K\DIV2K_valid_HR
 img_path_list = dir(strcat(file_path,'*.png'));
-fprintf(img_path_list);
 img_num = length(img_path_list);%獲取影象總數量
 count = 0;
 if img_num > 0 %有滿足條件的影象   
