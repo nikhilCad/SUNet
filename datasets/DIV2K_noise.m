@@ -28,9 +28,9 @@ if img_num > 0 %有滿足條件的影象
            added_noise = imnoise(C,'gaussian',0,V);
            
            count = count + 1;
-           imwrite(C,strcat('/content/SUNet/datasets/Denoising_DIV2K/train/target/',num2str(count),'.png'));
+           imwrite(C,strcat('Denoising_DIV2K/train/target/',num2str(count),'.png'));
            % D:\NCHU\1092\Image process\DIV2K\val\target(clean)
-           imwrite(added_noise,strcat('/content/SUNet/datasets/Denoising_DIV2K/train/input/',num2str(count),'.png'));
+           imwrite(added_noise,strcat('Denoising_DIV2K/train/input/',num2str(count),'.png'));
            % D:\NCHU\1092\Image process\DIV2K\val\input(blur)
        end
        fprintf('Image %d\n', j) ;
